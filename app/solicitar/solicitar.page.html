@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center"><img style="height:25px" src="assets/img/1.png" /></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<body>
+  <ion-app>
+
+    <ion-content class="outer-content">
+
+        <ion-list-header>
+          <ion-label>
+            Solicitando un viaje
+          </ion-label>
+        </ion-list-header>
+        <ion-progress-bar type="indeterminate"></ion-progress-bar>
+
+        
+          <ion-content >
+            <ion-card>
+              <ion-card-subtitle>Recomendaciones</ion-card-subtitle>
+              <ion-card-content>
+                -Recuerde el uso de mascarilla en todo momento
+              </ion-card-content>
+              <ion-card-content>
+                -Si ya no desea el viaje, favor cancelarlo
+              </ion-card-content>
+              <ion-card-content>
+                -Revisa tus cosas antes de bajar del vehiculo
+              </ion-card-content>
+              <ion-button [routerLink]="['/pagina']" size="medium" color="light" expand="block" (click)="siguiente()">Cancelar Viaje</ion-button>
+
+            </ion-card>
+          </ion-content>
+
+    </ion-content>
+  </ion-app>
+</body>
+</ion-content>

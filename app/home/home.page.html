@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center"><h4>TeLlevoApp</h4>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Card</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content fullscreen>
+    <ion-card style="margin-top: 100px"> 
+      <ion-card-title class="ion-text-center">
+        <ion-label >
+          <img  src="assets/img/1.png" />
+        </ion-label>
+      </ion-card-title>
+      <ion-card-content>     
+      </ion-card-content>
+      <ion-button [routerLink]="['/inicio']" size="medium" color="light" expand="block" (click)="siguiente()">Iniciar Sesion</ion-button>
+      <ion-button [routerLink]="['/registro']" size="medium" color="light" expand="block" (click)="siguiente()">Registrarse</ion-button>
+
+    </ion-card>
+    
+  </ion-content>
+</ion-app>

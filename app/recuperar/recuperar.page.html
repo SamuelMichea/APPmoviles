@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">TeLlevoApp </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <div class="ion-padding-verntical">
+    <ion-card class="ion-text-center">
+      <ion-card-title class="ion-text-center">
+ 
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text"  [(ngModel)]="usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="email" [(ngModel)]="correo"></ion-input>
+        </ion-item>
+               <ion-label>
+          <h3>Porfavor, ingrese su usuario y correo para la recuperacion de la contraseña</h3>
+        </ion-label>
+      </ion-card-content>
+      <ion-button size="medium" color="light" expand="block" (click)="recuperar()">Siguiente</ion-button>
+      <ion-button [routerLink]="['/inicio']" size="medium" color="light" expand="block" (click)="siguiente()">Volver</ion-button>
+
+    </ion-card>
+  </div>
+</ion-content>
